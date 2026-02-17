@@ -1,0 +1,12 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/api/chapter/list/route": "app/api/chapter/list/route.js",
+  "/api/latest/route": "app/api/latest/route.js",
+  "/api/chapter/detail/route": "app/api/chapter/detail/route.js",
+  "/api/manga/detail/route": "app/api/manga/detail/route.js",
+  "/api/manga/list/route": "app/api/manga/list/route.js",
+  "/manga/[id]/chapter/[chapterId]/page": "app/manga/[id]/chapter/[chapterId]/page.js",
+  "/manga/[id]/page": "app/manga/[id]/page.js",
+  "/page": "app/page.js"
+}

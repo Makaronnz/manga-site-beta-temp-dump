@@ -1,0 +1,12 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/api/chapter/list/route": "/api/chapter/list",
+  "/api/latest/route": "/api/latest",
+  "/api/chapter/detail/route": "/api/chapter/detail",
+  "/api/manga/detail/route": "/api/manga/detail",
+  "/api/manga/list/route": "/api/manga/list",
+  "/manga/[id]/chapter/[chapterId]/page": "/manga/[id]/chapter/[chapterId]",
+  "/manga/[id]/page": "/manga/[id]",
+  "/page": "/"
+}

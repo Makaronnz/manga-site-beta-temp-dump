@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "functions": {
+    "/api/chapter/detail": {},
+    "/api/manga/detail": {},
+    "/api/manga/list": {},
+    "/api/latest": {},
+    "/api/chapter/list": {}
+  }
+}

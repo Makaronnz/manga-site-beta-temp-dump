@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* 🔹 Masaüstünde (>=1024px) tüm UI’yi ~%80’e küçült */
+@media (min-width: 1024px) {
+  html { font-size: 80%; } /* 16px -> 12.8px; rem tabanlı her şey ~%80 olur */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Manual Theme Overrides */
+.light {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+.grey {
+  --background: #252525;
+  --foreground: #e5e5e5;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  /* Geist değişkenlerini **ezme**: */
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* Opsiyonel yardımcı */
+.glass { backdrop-filter: blur(10px); background: color-mix(in oklab, white 60%, transparent); }
+.dark .glass { background: color-mix(in oklab, white 10%, transparent); }
+
+/* yatay raylarda scroll barı sakla */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
